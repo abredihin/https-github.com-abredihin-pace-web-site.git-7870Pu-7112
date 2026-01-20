@@ -1,0 +1,15 @@
+{
+  "id": "xoayyfovq1vfbzkdds1txbkt5jhgeib7",
+  "name": "pace.app",
+  "description": "Everything for running in one app. Adaptive plans, race tracking, and coaching integrated. Improve your pace today.",
+  "url": "https://pace.app.com",
+  "ogImage": "/og-image.png",
+  "favicon": "/favicon.png",
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@runable"
+  },
+  "themeColor": "#000000",
+  "previewPort": 5363,
+  "previewUrl": "https://5363-i1rc9z85jy2s8cldxvq1c.e2b.app"
+}
