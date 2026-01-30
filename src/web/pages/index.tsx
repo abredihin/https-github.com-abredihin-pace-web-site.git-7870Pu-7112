@@ -27,6 +27,9 @@ const translations = {
     mvpBody: "Pace is early in development. The vision is one home for plans, races and coaches in a single app. The first step:",
     mvpHighlight: "adaptive plans",
     mvpBodyEnd: "that understand when life happens.",
+    mvpResearch: "We want to build the best running home, so we are running a short research study. Your experience as a runner can directly shape how Pace works for everyone. Take a quick survey to share your story:",
+    mvpSurveyPrimary: "Take the survey in English",
+    mvpSurveySecondary: "Questionário",
     mvpNote: "Early testers shape the full running home.",
     ctaTitle: "Start your Pace journey",
     ctaBody: "Join waitlist to test app and help us to build the running app you'd wish to have",
@@ -70,6 +73,9 @@ const translations = {
     mvpBody: "Pace está em desenvolvimento inicial. A visão é uma casa para planos, provas e treinadores em um único app. O primeiro passo:",
     mvpHighlight: "planos adaptativos",
     mvpBodyEnd: "que entendem quando a vida acontece.",
+    mvpResearch: "Queremos criar a melhor casa para corredores, por isso estamos fazendo uma pesquisa rápida. A sua experiência de corrida pode influenciar diretamente como o Pace funciona para todo mundo. Responda a um questionário curto e conte a sua história:",
+    mvpSurveyPrimary: "Questionário",
+    mvpSurveySecondary: "Survey",
     mvpNote: "Testadores iniciais moldam a casa completa para corredores.",
     ctaTitle: "Comece sua jornada Pace",
     ctaBody: "Entre na lista de espera para testar o app ou Ajude a construir o app de corrida que você gostaria de ter.",
@@ -342,7 +348,7 @@ const SolutionSection = () => {
 
 // MVP Section
 const MVPSection = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   
   return (
     <section className="relative min-h-screen w-full overflow-hidden py-24">
@@ -368,6 +374,27 @@ const MVPSection = () => {
           <p className="mb-8 text-lg leading-relaxed text-white/80 sm:text-xl md:text-2xl lang-transition">
             {t.mvpBody} <span className="text-[#007AFF]">{t.mvpHighlight}</span> {t.mvpBodyEnd}
           </p>
+          <p className="mb-8 text-lg leading-relaxed text-white/80 sm:text-xl lang-transition">
+            {t.mvpResearch}
+          </p>
+          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <a
+              href={lang === "en" ? "https://tally.so/r/OD1XrM" : "https://tally.so/r/wMkrKY"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 hover:shadow-lg sm:px-8 sm:py-4 sm:text-lg"
+            >
+              {t.mvpSurveyPrimary}
+            </a>
+            <a
+              href={lang === "en" ? "https://tally.so/r/wMkrKY" : "https://tally.so/r/OD1XrM"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white/70 backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/20 hover:text-white hover:shadow-lg sm:px-8 sm:py-4 sm:text-lg"
+            >
+              {t.mvpSurveySecondary}
+            </a>
+          </div>
           <p className="text-base italic text-white/60 sm:text-lg lang-transition">
             {t.mvpNote}
           </p>
