@@ -336,7 +336,7 @@ const SolutionSection = () => {
         <div className="mt-20 flex justify-center">
           <a
             href="#form"
-            className="group relative overflow-hidden rounded-full border-2 border-[#007AFF] bg-transparent px-8 py-4 text-lg font-semibold text-[#007AFF] transition-all hover:bg-[#007AFF] hover:text-white sm:px-10 sm:py-5 sm:text-xl lang-transition"
+            className="group relative overflow-hidden rounded-full backdrop-blur-md bg-white/10 border border-white/30 px-8 py-4 text-lg font-semibold text-white transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 sm:px-10 sm:py-5 sm:text-xl lang-transition"
           >
             <span className="relative z-10">{t.seeHowItWorks}</span>
           </a>
@@ -524,7 +524,7 @@ const CTASection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative w-full overflow-hidden rounded-xl bg-[#007AFF] px-8 py-5 text-lg font-semibold text-white transition-all hover:bg-[#0066DD] hover:shadow-lg hover:shadow-[#007AFF]/30 disabled:cursor-not-allowed disabled:opacity-60 lang-transition"
+                className="group relative w-full overflow-hidden rounded-xl backdrop-blur-md bg-white/10 border border-white/30 px-8 py-5 text-lg font-semibold text-white transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 hover:shadow-lg hover:shadow-[#007AFF]/30 disabled:cursor-not-allowed disabled:opacity-60 lang-transition"
               >
                 {isSubmitting ? (
                   <span className="flex items-center justify-center gap-2">
