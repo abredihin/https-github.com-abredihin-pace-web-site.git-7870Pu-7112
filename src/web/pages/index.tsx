@@ -377,22 +377,14 @@ const MVPSection = () => {
           <p className="mb-8 text-lg leading-relaxed text-white/80 sm:text-xl lang-transition">
             {t.mvpResearch}
           </p>
-          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="mb-8 flex justify-center">
             <a
               href={lang === "en" ? "https://tally.so/r/OD1XrM" : "https://tally.so/r/wMkrKY"}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 hover:shadow-lg sm:px-8 sm:py-4 sm:text-lg"
             >
-              {t.mvpSurveyPrimary}
-            </a>
-            <a
-              href={lang === "en" ? "https://tally.so/r/wMkrKY" : "https://tally.so/r/OD1XrM"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white/70 backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/20 hover:text-white hover:shadow-lg sm:px-8 sm:py-4 sm:text-lg"
-            >
-              {t.mvpSurveySecondary}
+              {lang === "en" ? "Take the survey" : "Questionário"}
             </a>
           </div>
           <p className="text-base italic text-white/60 sm:text-lg lang-transition">
