@@ -194,7 +194,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#form"
-          className="hero-cta group relative overflow-hidden rounded-full bg-[#007AFF] px-8 py-4 text-lg font-semibold text-white transition-all hover:bg-[#0066DD] hover:shadow-lg hover:shadow-[#007AFF]/30 sm:px-10 sm:py-5 sm:text-xl lang-transition"
+          className="hero-cta group relative overflow-hidden rounded-full border border-white/30 bg-white/10 px-8 py-4 text-lg font-semibold text-white backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 hover:shadow-lg hover:shadow-[#007AFF]/20 sm:px-10 sm:py-5 sm:text-xl lang-transition"
         >
           <span className="relative z-10">{t.heroCTA}</span>
           <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
