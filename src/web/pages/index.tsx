@@ -336,9 +336,10 @@ const SolutionSection = () => {
         <div className="mt-20 flex justify-center">
           <a
             href="#form"
-            className="group relative overflow-hidden rounded-full backdrop-blur-md bg-white/10 border border-white/30 px-8 py-4 text-lg font-semibold text-white transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 sm:px-10 sm:py-5 sm:text-xl lang-transition"
+            className="group relative overflow-hidden rounded-full backdrop-blur-md bg-[#007AFF]/25 border border-[#007AFF]/40 px-8 py-4 text-lg font-semibold text-slate-900 shadow-lg shadow-[#007AFF]/10 transition-all hover:border-[#007AFF]/60 hover:bg-[#007AFF]/35 hover:shadow-xl hover:shadow-[#007AFF]/20 sm:px-10 sm:py-5 sm:text-xl lang-transition"
           >
             <span className="relative z-10">{t.seeHowItWorks}</span>
+            <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
           </a>
         </div>
       </div>
@@ -384,7 +385,8 @@ const MVPSection = () => {
               rel="noopener noreferrer"
               className="group relative overflow-hidden rounded-full border border-white/20 bg-white/10 px-6 py-3 text-base font-semibold text-white backdrop-blur-md transition-all hover:border-[#007AFF]/50 hover:bg-[#007AFF]/30 hover:shadow-lg sm:px-8 sm:py-4 sm:text-lg"
             >
-              {lang === "en" ? "Take the survey" : "Questionário"}
+              <span className="relative z-10">{lang === "en" ? "Take the survey" : "Questionário"}</span>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
             </a>
           </div>
           <p className="text-base italic text-white/60 sm:text-lg lang-transition">
