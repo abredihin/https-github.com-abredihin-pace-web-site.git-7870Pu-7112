@@ -27,10 +27,10 @@ const translations = {
     mvpBody: "Pace is early in development. The goal is to have a single app that has space for plans, races, and coaches.",
     mvpHighlight: "Making plans that can change based on what happens in life",
     mvpBodyEnd: "is the first step.",
-    mvpResearch: "We want to build the best running home, so we are running a short research study. Your experience as a runner can directly shape how Pace works for everyone. Take a quick survey to share your story:",
+    mvpResearch: "Your experience as a runner can help us create the best running app. Take a quick survey to share your story",
     mvpSurveyPrimary: "Take the survey in English",
     mvpSurveySecondary: "Questionário",
-    mvpNote: "Early testers shape the full running home.",
+    mvpNote: "If you organize races and we'd love to talk and to appear events in future app.",
     ctaTitle: "Start your Pace journey",
     ctaBody: "Join waitlist to test app and help us to build the running app you'd wish to have",
     ctaTeam: "",
@@ -73,10 +73,10 @@ const translations = {
     mvpBody: "Pace está em desenvolvimento inicial. O objetivo é ter um único app com espaço para planos, provas e treinadores.",
     mvpHighlight: "Criar planos que podem mudar com base no que acontece na vida",
     mvpBodyEnd: "é o primeiro passo.",
-    mvpResearch: "Queremos criar a melhor casa para corredores, por isso estamos fazendo uma pesquisa rápida. A sua experiência de corrida pode influenciar diretamente como o Pace funciona para todo mundo. Responda a um questionário curto e conte a sua história:",
+    mvpResearch: "Sua experiência como corredor pode nos ajudar a criar o melhor app de corrida. Faça uma rápida pesquisa para contar sua história",
     mvpSurveyPrimary: "Questionário",
     mvpSurveySecondary: "Survey",
-    mvpNote: "Testadores iniciais moldam a casa completa para corredores.",
+    mvpNote: "Se você organiza provas, adoraríamos conversar e incluir eventos no futuro app.",
     ctaTitle: "Comece sua jornada Pace",
     ctaBody: "Entre na lista de espera para testar o app ou Ajude a construir o app de corrida que você gostaria de ter.",
     ctaTeam: "",
@@ -373,7 +373,7 @@ const MVPSection = () => {
             {t.mvpTitle}
           </h2>
           <p className="mb-8 text-lg leading-relaxed text-white/80 sm:text-xl md:text-2xl lang-transition">
-            {t.mvpBody} <span className="text-[#007AFF]">{t.mvpHighlight}</span> {t.mvpBodyEnd}
+            {t.mvpBody} <span className="text-[#FFFFFFCC]">{t.mvpHighlight}</span> {t.mvpBodyEnd}
           </p>
           <p className="mb-8 text-lg leading-relaxed text-white/80 sm:text-xl lang-transition">
             {t.mvpResearch}
@@ -389,7 +389,7 @@ const MVPSection = () => {
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
             </a>
           </div>
-          <p className="text-base italic text-white/60 sm:text-lg lang-transition">
+          <p className="text-base italic text-[#007aff] sm:text-lg lang-transition">
             {t.mvpNote}
           </p>
         </div>
