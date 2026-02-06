@@ -41,7 +41,7 @@ const translations = {
     consentText: "Early access updates about Pace.",
     joinTeamLabel: "I'd like to help the team",
     helpWithPlaceholder: "i can help with..",
-    isRaceOrganizerLabel: "I am a race organizer",
+    isRaceOrganizerLabel: "I'm a race organizer",
     eventNamePlaceholder: "Event name",
     submitButton: "Join waitlist",
     submitting: "Joining...",
