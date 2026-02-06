@@ -39,7 +39,7 @@ const translations = {
     whatsappLabel: "WhatsApp (optional)",
     whatsappPlaceholder: "+1 234 567 8900",
     consentText: "Early access updates about Pace.",
-    joinTeamLabel: "I'd like to join the team",
+    joinTeamLabel: "I'd like to help the team",
     helpWithPlaceholder: "i can help with..",
     submitButton: "Join waitlist",
     submitting: "Joining...",
