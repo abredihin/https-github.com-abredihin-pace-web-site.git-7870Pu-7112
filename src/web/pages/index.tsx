@@ -41,6 +41,8 @@ const translations = {
     consentText: "Early access updates about Pace.",
     joinTeamLabel: "I'd like to help the team",
     helpWithPlaceholder: "i can help with..",
+    isRaceOrganizerLabel: "I am a race organizer",
+    eventNamePlaceholder: "Event name",
     submitButton: "Join waitlist",
     submitting: "Joining...",
     successTitle: "You're on the list!",
@@ -87,6 +89,8 @@ const translations = {
     consentText: "Atualizações de acesso antecipado sobre Pace.",
     joinTeamLabel: "Gostaria de fazer parte do time",
     helpWithPlaceholder: "posso ajudar com..",
+    isRaceOrganizerLabel: "Sou organizador das provas",
+    eventNamePlaceholder: "Nome da prova",
     submitButton: "Junte-se à lista",
     submitting: "Entrando...",
     successTitle: "Você está na lista!",
@@ -405,6 +409,8 @@ const CTASection = () => {
   const [whatsapp, setWhatsapp] = useState("");
   const [wantsToJoinTeam, setWantsToJoinTeam] = useState(false);
   const [helpWith, setHelpWith] = useState("");
+  const [isRaceOrganizer, setIsRaceOrganizer] = useState(false);
+  const [eventName, setEventName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -413,8 +419,8 @@ const CTASection = () => {
     if (!email) return;
     
     setIsSubmitting(true);
-    // Simulate submission - in real app, would include wantsToJoinTeam and helpWith in the data
-    console.log({ email, whatsapp, wantsToJoinTeam, helpWith });
+    // Simulate submission - in real app, would include wantsToJoinTeam, helpWith, isRaceOrganizer, and eventName in the data
+    console.log({ email, whatsapp, wantsToJoinTeam, helpWith, isRaceOrganizer, eventName });
     await new Promise(resolve => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -519,6 +525,38 @@ const CTASection = () => {
                 </div>
               </div>
               
+              {/* Race Organizer Checkbox with slide-down input */}
+              <div className="text-left">
+                <div className="flex items-center gap-3">
+                  <input
+                    type="checkbox"
+                    id="raceOrganizer"
+                    checked={isRaceOrganizer}
+                    onChange={(e) => setIsRaceOrganizer(e.target.checked)}
+                    className="h-5 w-5 cursor-pointer rounded border-white/20 bg-white/10 text-[#007AFF] focus:ring-[#007AFF]/30 focus:ring-offset-0"
+                  />
+                  <label htmlFor="raceOrganizer" className="cursor-pointer text-sm text-white/80 lang-transition">
+                    {t.isRaceOrganizerLabel}
+                  </label>
+                </div>
+                
+                {/* Slide-down input field */}
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    isRaceOrganizer ? "mt-4 max-h-20 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <input
+                    type="text"
+                    id="eventName"
+                    value={eventName}
+                    onChange={(e) => setEventName(e.target.value)}
+                    placeholder={t.eventNamePlaceholder}
+                    className="w-full rounded-xl border border-white/20 bg-white/10 px-5 py-4 text-white placeholder-white/40 outline-none transition-all focus:border-[#007AFF] focus:ring-2 focus:ring-[#007AFF]/30"
+                  />
+                </div>
+              </div>
+                
               <p className="text-xs text-white/50 lang-transition">
                 {t.consentText}
               </p>
